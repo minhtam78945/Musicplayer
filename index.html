@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/CSS/layout.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidlebar">
+            <div class="logo">
+                <i class="fa-solid fa-guitar"></i>
+                <span class="logo-text">Music Player</span>
+            </div>
+            <div class="home">
+                <a href="#"><i class="fa-solid fa-house"></i>Home</a>
+                <a href="#"><i class="fa-solid fa-chart-simple"></i>Trend</a>
+                <a href="#"><i class="fa-solid fa-music"></i>Libary</a>
+            </div>
+            <div class="discover">
+                <p>Discover</p>
+                <a href="#"><i class="fa-solid fa-microphone"></i>Singles</a>
+                <a href="#"><i class="fa-solid fa-window-maximize"></i>Albums</a>
+                <a href="#"><i class="fa-solid fa-music"></i>Artist</a>
+            </div>
+            <div class="List">
+                <p>My Playlist</p>
+                <a href="#"><i class="fa-solid fa-heart"></i>Like Song</a>
+                <a href="#"><i class="fa-solid fa-star"></i>Favorite</a>
+                <a href="#"><i class="fa-solid fa-headphones"></i>Playlist</a>
+            </div>
+        </div>
+        <div class="main">
+            <div class="song_side">
+                <nav>
+                    <ul>
+                        <li><i style="color: #F6615C;" class="fa-solid fa-circle"></i></li>
+                        <li><i style="color: #F5C054;" class="fa-solid fa-circle"></i></li>
+                        <li><i style="color:#28CA42 ;" class="fa-solid fa-circle"></i></li>
+                    </ul>
+                    <form class="search">
+                        <input type="text" placeholder="Search....." class="input">
+                        <button type="submit" class="button">
+                            <i style="color: black; font-size: 20px;" class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+                    <div class="user">
+                        <img class="proflie"
+                            src="https://scontent.fsgn13-4.fna.fbcdn.net/v/t39.30808-6/305404846_1138104816789412_5983810110348950335_n.jpg?stp=cp6_dst-jpg&_nc_cat=107&ccb=1-7&_nc_sid=174925&_nc_ohc=egv2aM_TLrMAX9Euf72&_nc_ht=scontent.fsgn13-4.fna&oh=00_AT-ZJhJ71vCHw97FcSMhk6_Etuf08sECo_PuNn32VDvx5g&oe=6327D704"
+                            alt="user.png">
+                    </div>
+                    <div class="bell">
+                        <i class="fa-solid fa-bell" id="btn-modal"></i>
+                        <i class="fa-solid fa-circle" id="mess"></i>
+                    </div>
+
+                </nav>
+                <div class="modal hide">
+                    <div class="modal_inner">
+                        <div class="modal-report">
+                            <div class="modal_headr">
+                                <p>Notify</p>
+                                <i class="fa-solid fa-xmark" id="close" style="cursor: pointer;"></i>
+                            </div>
+                            <div class="modal_new">
+                                <a href="#">ALL</a>
+                                <a href="#">Unread</a>
+                            </div>
+                        </div>
+                        <div class="modal_body">
+                            <div class="pap-new">
+                                <div class="new">
+                                    <p>New</p>
+                                </div>
+                                <div class="read_all">
+                                    <a href="#">See all</a>
+                                </div>
+                            </div>
+                            <div class="content-pap-new">
+                                <div class="new-content">
+                                    <div class="card_img">
+                                        <img src="https://i.pinimg.com/736x/71/77/b7/7177b782f387c916d4e8c29a9a207148.jpg"
+                                            alt="report.png">
+                                    </div>
+                                    <div class="content-today">
+                                        <h4>Đã cập nhật bài hát mới</h4>
+                                        <div class="bell1">
+                                            <i class="fa-solid fa-bell"></i>
+                                            <i class="fa-solid fa-circle" id="mess"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="new-content">
+                                    <div class="card_img">
+                                        <img src="https://i.pinimg.com/564x/17/99/ce/1799cef3272765658967bc9fc0234ace.jpg"
+                                            alt="report.png">
+                                    </div>
+                                    <div class="content-today">
+                                        <h4>Đã cập nhật bài hát mới</h4>
+                                        <div class="bell1">
+                                            <i class="fa-solid fa-bell"></i>
+                                            <i class="fa-solid fa-circle" id="mess"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="new-content">
+                                    <div class="card_img">
+                                        <img src="https://i.pinimg.com/736x/88/67/62/88676234e9d480dcba2fae6dba735237.jpg"
+                                            alt="report.png">
+                                    </div>
+                                    <div class="content-today">
+                                        <h4>Đã cập nhật bài hát mới</h4>
+                                        <div class="bell1">
+                                            <i class="fa-solid fa-bell"></i>
+                                            <i class="fa-solid fa-circle" id="mess"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="new-content">
+                                    <div class="card_img">
+                                        <img src="https://i.pinimg.com/564x/6d/38/43/6d3843cd16563bf91d6ca57c67e8462e.jpg"
+                                            alt="report.png">
+                                    </div>
+                                    <div class="content-today">
+                                        <h4>Đã cập nhật bài hát mới</h4>
+                                        <div class="bell1">
+                                            <i class="fa-solid fa-bell"></i>
+                                            <i class="fa-solid fa-circle" id="mess"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="pap-new">
+                                    <div class="new">
+                                        <p>Before</p>
+                                    </div>
+                                    <div class="read_all">
+                                        <a href="#">See all</a>
+                                    </div>
+                                </div>
+                                <div class="new-content">
+                                    <div class="card_img">
+                                        <img src="https://michael-shanks.com/vu-sinh-nam-bao-nhieu/imager_4787.jpg"
+                                            alt="report.png">
+                                    </div>
+                                    <div class="content-today">
+                                        <h4>Top 1 Trending</h4>
+                                        <div class="bell1">
+                                            <i class="fa-solid fa-bell"></i>
+                                            <i class="fa-solid fa-circle" id="mess"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="new-content">
+                                    <div class="card_img">
+                                        <img src="http://giadinh.mediacdn.vn/2020/9/28/huy10-1601283962015968512389-crop-1601284144708116949073.jpg"
+                                            alt="report.png">
+                                    </div>
+                                    <div class="content-today">
+                                        <h4>2.000.000 Follow</h4>
+                                        <div class="bell1">
+                                            <i class="fa-solid fa-bell"></i>
+                                            <i class="fa-solid fa-circle" id="mess"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-text">
+                        <h4>Top Artist</h4>
+                    </div>
+                    <div class="btn_silder">
+                        <i class="fa-solid fa-arrow-left" id="song_left"></i>
+                        <i class="fa-sharp fa-solid fa-arrow-right" id="song_right"></i>
+                    </div>
+                </div>
+                <div class="product-feature">
+                    <ul class="pro">
+                        <div class="img_pro">
+                            <li class="song-product">
+                                <img src="/image/image-music/author/pos1.jfif" alt="b1.png">
+                                <div class="sub">Quân AP</div>
+                                </h5>
+                            </li>
+                        </div>
+                        <div class="img_pro">
+                            <li class="song-product">
+                                <img src="/image/image-music/author/pos2.jfif" alt="b1.png">
+                                <div class="sub">Sơn Tùng MTP</div>
+                                </h5>
+                            </li>
+                        </div>
+                        <div class="img_pro">
+                            <li class="song-product">
+                                <img src="/image/image-music/author/pos3.jfif" alt="b1.png">
+
+                                <div class="sub">Conan Gray</div>
+                                </h5>
+                            </li>
+                        </div>
+                        <div class="img_pro">
+                            <li class="song-product">
+                                <img src="/image/image-music/author/pos4.jfif" alt="b1.png">
+                                <div class="sub"> STARBOY </div>
+                                </h5>
+                            </li>
+                        </div>
+                        <div class="img_pro">
+                            <li class="song-product">
+                                <img src="/image/image-music/author/pos5.jfif" alt="b1.png">
+                                <div class="sub">CAVETOWN</div>
+                                </h5>
+                            </li>
+                        </div>
+                        <div class="img_pro">
+                            <li class="song-product">
+                                <img src="/image/image-music/author/pos6.png" alt="b1.png">
+                                <div class="sub">Billie Eilish & Khalid (16) </div>
+                                </h5>
+                            </li>
+                        </div>
+                        <div class="img_pro">
+                            <li class="song-product">
+                                <img src="/image/image-music/author/pos7.jfif" alt="b1.png">
+                                <div class="sub">Billie Eilish</div>
+                                </h5>
+                            </li>
+                        </div>
+                        <div class="img_pro">
+                            <li class="song-product">
+                                <img src="/image/image-music/author/pos7.jfif" alt="b1.png">
+                                <div class="sub">Billie Eilish</div>
+                                </h5>
+                            </li>
+                        </div>
+                        <div class="img_pro">
+                            <li class="song-product">
+                                <img src="/image/image-music/author/pos7.jfif" alt="b1.png">
+                                <div class="sub">Billie Eilish</div>
+                                </h5>
+                            </li>
+                        </div>
+                        <div class="img_pro">
+                            <li class="song-product">
+                                <img src="/image/image-music/author/pos7.jfif" alt="b1.png">
+                                <div class="sub">Billie Eilish</div>
+                                </h5>
+                            </li>
+                        </div>
+                        <div class="img_pro">
+                            <li class="song-product">
+                                <img src="/image/image-music/author/pos7.jfif" alt="b1.png">
+                                <div class="sub">Billie Eilish</div>
+                                </h5>
+                            </li>
+                        </div>
+                        <div class="img_pro">
+                            <li class="song-product">
+                                <img src="/image/image-music/author/pos7.jfif" alt="b1.png">
+                                <div class="sub">Billie Eilish</div>
+                                </h5>
+                            </li>
+                        </div>
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="/JS/modal.js"></script>
+    <script src="/JS/app.js"></script>
+</body>
+
+</html>
