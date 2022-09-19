@@ -20,7 +20,7 @@ body {
 .container {
     position: relative;
     width: 70%;
-    height: 80vh;
+    height: 85vh;
     background-color: #fff;
     border-radius: 15px;
     overflow: hidden;
@@ -147,6 +147,55 @@ form .sign-up-form {
 
 a {
     text-decoration: none;
+}
+
+.socal-media a:first-child {
+    background-color: #2467b2;
+}
+
+.socal-media i:first-child {
+    color: #fff;
+}
+
+.socal-media a:nth-last-of-type(2) {
+    background-color: #E7009E
+}
+
+.socal-media i:nth-last-of-type(2) {
+    color: #fff;
+}
+
+.socal-media a:last-child {
+    background-color: #00acee;
+}
+
+.socal-media i:last-child {
+    color: #fff;
+}
+
+.error {
+    display: flex;
+    align-items: flex-end;
+    margin-right: auto;
+    margin-left: 10px;
+    margin-top: 6px;
+    color: #d93025;
+    display: none;
+    font-size: 13px;
+}
+
+.Invaild.error {
+    display: flex;
+}
+
+.fa-eye-slash {
+    color: #999;
+    cursor: pointer;
+}
+
+.fa-circle-exclamation {
+    margin-right: 6px;
+    font-size: 15px;
 }
 
 .panner-conatiner {
