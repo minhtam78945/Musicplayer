@@ -7,3 +7,4 @@ song_right.addEventListener("click", function () {
 song_left.addEventListener("click", function () {
     song.scrollLeft -= 330;
 });
+// music
