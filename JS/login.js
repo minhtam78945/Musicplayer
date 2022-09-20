@@ -39,9 +39,27 @@ eyeIcon.forEach(eyeIcon => {
     });
 });
 //check the length for the password; 
+function Createpassword() {
+    const password_patter = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+    if (!passwordInput.value.match(password_patter)) {
+        return password.classList.add("Invaild");
+    }
+    password.classList.remove("Invaild");
+}
+function Confirmpass() {
+    if (passwordInput.value !== Confirm_PasswordInput.value || Confirm_PasswordInput.value === "") {
+        return Confirm_pass.classList.add("Invaild");
+    }
+    Confirm_pass.classList.remove("Invaild");
+
+}
 from.addEventListener("submit", function (e) {
     e.preventDefault();
     checkmail();
+    Createpassword();
+    Confirmpass();
     emailInput.addEventListener("keyup", checkmail);
+    passwordInput.addEventListener("keyup", Createpassword);
+    Confirm_PasswordInput.addEventListener("keyup", Confirmpass);
 
 });
