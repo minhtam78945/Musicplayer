@@ -29,7 +29,7 @@
 }
 
 body {
-    color: white;
+    overflow: hidden;
 }
 
 .container {
