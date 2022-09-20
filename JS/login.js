@@ -25,6 +25,7 @@ function checkmail() {
     }
     email.classList.remove("Invaild");
 }
+// Show the passwrod;
 const eyeIcon = document.querySelectorAll(".fa-eye-slash");
 eyeIcon.forEach(eyeIcon => {
     eyeIcon.addEventListener("click", function () {
@@ -37,8 +38,10 @@ eyeIcon.forEach(eyeIcon => {
         input.type = "password";
     });
 });
+//check the length for the password; 
 from.addEventListener("submit", function (e) {
     e.preventDefault();
-    checkmail()
+    checkmail();
+    emailInput.addEventListener("keyup", checkmail);
 
 });

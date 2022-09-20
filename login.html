@@ -37,35 +37,44 @@
 
             <form action="" class="sign-up-form">
                 <h2 class="title">Sign up</h2>
-                <div class="input-field username-field">
-                    <i class="fas fa-user"></i>
-                    <input type="text" placeholder="Username" id="username-sginup" class="input">
+                <div class="field">
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Username" id="username">
+                    </div>
                 </div>
-                <div class="input-field email-field">
-                    <i class="fa-solid fa-envelope"></i>
-                    <input type="email" placeholder="Email" id="email-sginup" class="input">
+                <div class="field email-field">
+                    <div class="input-field">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" placeholder="Email" id="email-sginup" class="input1">
+                    </div>
+                    <span class=" error error-email">
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                        <span class="error-text">Please enter valid email : name@gamil.com</span>
+                    </span>
                 </div>
-                <span class=" error error-email">
-                    <i class="fa-solid fa-circle-exclamation"></i>
-                    <p class="error-text">Please enter a valid email</p>
-                </span>
-                <div class="input-field Create_password">
-                    <i class="fas fa-lock"></i>
-                    <input type="password" placeholder="Password" id="password-signup" class="input">
-                    <i class="fa-solid fa-eye-slash"></i>
-                </div>
-                <span class=" error error-password">
-                    <i class="fa-solid fa-circle-exclamation"></i>
-                    <p class="error-text">Please enter a password with at least 8 characters</p>
-                </span>
-                <div class="input-field Confirm_Password">
-                    <i class="fas fa-lock"></i>
-                    <input type="password" placeholder="Confrim Password" id="cofirm-signup" class="input">
-                    <i class="fa-solid fa-eye-slash"></i>
+
+                <div class="field">
+                    <div class="input-field Create_password">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password" id="password-signup" class="input">
+                        <i class="fa-solid fa-eye-slash"></i>
+                    </div>
                 </div>
                 <span class=" error error-password">
                     <i class="fa-solid fa-circle-exclamation"></i>
-                    <p class="error-text">Password don't match</p>
+                    <p class="error-text">error</p>
+                </span>
+                <div class="field">
+                    <div class="input-field Confirm_Password">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Confrim Password" id="cofirm-signup" class="input">
+                        <i class="fa-solid fa-eye-slash"></i>
+                    </div>
+                </div>
+                <span class=" error error-password">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <p class="error-text">error</p>
                 </span>
                 <input type="submit" value="Signup" class="btn">
                 <p class="social-text">Or Sign in width social</p>
