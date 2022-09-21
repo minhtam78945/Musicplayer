@@ -11,6 +11,7 @@
 
 body {
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
@@ -20,7 +21,7 @@ body {
 .container {
     position: relative;
     width: 70%;
-    height: 88vh;
+    height: 80vh;
     background-color: #fff;
     border-radius: 15px;
     overflow: hidden;
