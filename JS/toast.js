@@ -21,7 +21,8 @@ function toast({
         toast.style.animation = `sildeinleft ease-in-out 0.3s, fadeout ease-in-out 1s ${delay}s forwards`;
         const icon = {
             success: 'fa-solid fa-circle-check',
-            error: 'fa-solid fa-circle-exclamation'
+            error: 'fa-solid fa-circle-exclamation',
+            warring:`fa-solid fa-circle-exclamation`
         };
         const icons = icon[type];
         toast.innerHTML = `

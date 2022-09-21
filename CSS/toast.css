@@ -93,3 +93,9 @@
     font-size: 20px;
     color: #ff623d;
 }
+.toast--warring{
+    border-color: #fbbd86;
+}
+.toast--warring .toast-icon{
+    color: #fbbd86;
+}

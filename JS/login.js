@@ -62,27 +62,43 @@ from.addEventListener("submit", function (e) {
     passwordInput.addEventListener("keyup", Createpassword);
     Confirm_PasswordInput.addEventListener("keyup", Confirmpass);
 
+
 });
 const form_sign_in = document.querySelector(".sign-in-form");
 form_sign_in.addEventListener("submit", function (e) {
     e.preventDefault();
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
-    if (!username) {
+    if (!username && !password) {
         toast({
             title: `Error`,
-            message: `Vui lòng nhập tài khoản`,
+            message: `Please enter your account and password`,
             type: `error`,
+            duation: 3000
+        });
+    }
+    else if (!username) {
+        toast({
+            title: `Warring`,
+            message: `Please enter your account`,
+            type: `warring`,
             duation: 3000
         });
     }
     else if (!password) {
         toast({
-            title: `Error`,
-            message: `Vui lòng nhập mật khẩu`,
-            type: `error`,
+            title: `Warring`,
+            message: `Please enter your password`,
+            type: `warring`,
             duation: 3000
         });
     }
-    
+    else {
+        toast({
+            title: `SUCCESS`,
+            message: `Đăng nhập thành công`,
+            type: `success`,
+            duation: 3000
+        });
+    }
 })
