@@ -90,6 +90,18 @@ form .sign-up-form {
     position: relative;
 }
 
+.input-field input {
+    border: none;
+    margin-left: 25px;
+    border-radius: 25px;
+    background: none;
+    padding: 15px 15px;
+    height: 100%;
+    outline: none;
+    width: 90%;
+    font-size: 18px;
+}
+
 .fa-user {
     position: absolute;
     left: 12px;
@@ -120,16 +132,7 @@ form .sign-up-form {
 
 }
 
-.input-field input {
-    border: none;
-    margin-left: 25px;
-    background: none;
-    padding: 15px 15px;
-    height: 100%;
-    outline: none;
-    width: 100%;
-    font-size: 18px;
-}
+
 
 .btn {
     margin-bottom: 20px;
@@ -139,7 +142,7 @@ form .sign-up-form {
     border: none;
     border-radius: 50px;
     font-weight: 700;
-    margin: 5px 0;
+    margin: 15px 0;
     text-transform: uppercase;
 }
 
@@ -165,6 +168,7 @@ form .sign-up-form {
 
 .error-text {
     font-size: 13px;
+    user-select: none;
     line-height: 35px;
     margin-left: 15px;
     text-align: center;
@@ -182,7 +186,6 @@ form .sign-up-form {
     display: flex;
     cursor: pointer;
     align-items: center;
-    border: 1px solid black;
     margin: 0 10px;
     border-radius: 50px;
     justify-content: center;

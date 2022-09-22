@@ -39,23 +39,23 @@
             <form action="" class="sign-up-form" id="form-2">
                 <h2 class="title">Sign up</h2>
                 <div class="input-field">
-                    <i class="fas fa-user"></i>
+                    <i class="fas fa-user icon"></i>
                     <input type="text" placeholder="Username" id="username-sign-up">
                     <span class="error-text"></span>
                 </div>
                 <div class="input-field">
-                    <i class="fa-solid fa-envelope"></i>
+                    <i class="fa-solid fa-envelope icon"></i>
                     <input type="email" placeholder="Email" id="email-sginup" class="input1">
                     <span class="error-text"></span>
                 </div>
                 <div class="input-field">
-                    <i class="fas fa-lock"></i>
+                    <i class="fas fa-lock icon"></i>
                     <input type="password" placeholder="Password" id="password-signup" class="input">
                     <i class="fa-solid fa-eye-slash"></i>
                     <span class="error-text"></span>
                 </div>
                 <div class="input-field">
-                    <i class="fas fa-lock"></i>
+                    <i class="fas fa-lock icon"></i>
                     <input type="password" placeholder="Confrim Password" id="cofirm-signup" class="input">
                     <i class="fa-solid fa-eye-slash"></i>
                     <span class="error-text"></span>
@@ -98,9 +98,18 @@
             Error: `.error-text`,
             rules: [
                 Validator.isRequired('#username-sign-up'),
-                Validator.isEmail('#email-sginup'),
-            ]
+                Validator.isEmail('#email-sginup', "You entered not email"),
+                Validator.minlength('#password-signup', 8),
+                Validator.isRequired('#cofirm-signup'),
+                Validator.isCofrim('#cofirm-signup', function () {
+                    return document.querySelector('#form-2 #password-signup').value;
+                }, "Password don't match"),
+            ],
+            onSubmit: function (data) {
+                console.log(data);
+            }
         });
+
     </script>
 </body>
 
