@@ -14,7 +14,7 @@ function Validator(object) {
         var ErrorElement = InputElement.parentElement.querySelector(object.Error);
         if (InputElement) {
             InputElement.onblur = function () {
-                // get the value : InputElement.value;
+                // get the value : InputElem                                ent.value;
                 // test fun : fun
                 var errorMEss = rule.test(InputElement.value);
                 if (errorMEss) {
