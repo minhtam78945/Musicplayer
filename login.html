@@ -36,47 +36,29 @@
 
             <!-- Signup -->
 
-            <form action="" class="sign-up-form">
+            <form action="" class="sign-up-form" id="form-2">
                 <h2 class="title">Sign up</h2>
-                <div class="field">
-                    <div class="input-field">
-                        <i class="fas fa-user"></i>
-                        <input type="text" placeholder="Username" id="username">
-                    </div>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Username" id="username-sign-up">
+                   <p class="error-text">Chao</p>
                 </div>
-                <div class="field email-field">
-                    <div class="input-field">
-                        <i class="fa-solid fa-envelope"></i>
-                        <input type="email" placeholder="Email" id="email-sginup" class="input1">
-                    </div>
-                    <span class=" error error-email">
-                        <i class="fa-solid fa-circle-exclamation"></i>
-                        <span class="error-text">Please enter valid email : name@gamil.com</span>
-                    </span>
+                <div class="input-field">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" placeholder="Email" id="email-sginup" class="input1">
+                    <span class="error-text">Caho</span>
                 </div>
-
-                <div class="field Create_password">
-                    <div class="input-field">
-                        <i class="fas fa-lock"></i>
-                        <input type="password" placeholder="Password" id="password-signup" class="input">
-                        <i class="fa-solid fa-eye-slash"></i>
-                    </div>
-                    <span class=" error error-password">
-                        <i class="fa-solid fa-circle-exclamation" id="icon"></i>
-                        <span class="error-text">Please enter a password with at least 8 characters:chaomung123@A</span>
-                    </span>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Password" id="password-signup" class="input">
+                    <i class="fa-solid fa-eye-slash"></i>
+                    <span class="error-text">Caho</span>
                 </div>
-
-                <div class="field  Confirm_Password">
-                    <div class="input-field">
-                        <i class="fas fa-lock"></i>
-                        <input type="password" placeholder="Confrim Password" id="cofirm-signup" class="input">
-                        <i class="fa-solid fa-eye-slash"></i>
-                    </div>
-                    <span class=" error error-password">
-                        <i class="fa-solid fa-circle-exclamation"></i>
-                        <span class="error-text">Password don't macth</span>
-                    </span>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Confrim Password" id="cofirm-signup" class="input">
+                    <i class="fa-solid fa-eye-slash"></i>
+                    <span class="error-text">Caho</span>
                 </div>
                 <input type="submit" value="Signup" class="btn">
                 <p class="social-text">Or Sign in width social</p>
@@ -109,6 +91,16 @@
     <div id="toast"> </div>
     <script src="JS/login.js"></script>
     <script src="JS/toast.js"></script>
+    <script>
+        //  mong muon chua chung ta
+        Validator({
+            form: `#form-2`,
+            rules: [
+                Validator.isRequired('#username-sign-up'),
+                Validator.isEmail('#email-sginup'),
+            ]
+        });
+    </script>
 </body>
 
 </html>

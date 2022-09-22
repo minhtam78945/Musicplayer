@@ -8,97 +8,43 @@ sign_up_btn.addEventListener("click", function () {
 sign_in_btn.addEventListener("click", function () {
     containe.classList.remove("active");
 });
-const from = document.querySelector(".sign-up-form")
-const email = from.querySelector(".email-field");
-const emailInput = email.querySelector("#email-sginup");
-const password = from.querySelector(".Create_password");
-const passwordInput = password.querySelector("#password-signup")
-const Confirm_pass = from.querySelector(".Confirm_Password");
-const Confirm_PasswordInput = Confirm_pass.querySelector("#cofirm-signup")
-
-console.log(from);
-// check Email
-function checkmail() {
-    const emialpattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
-    if (!emailInput.value.match(emialpattern)) {
-        return email.classList.add("Invaild");
+// OOp ELEMENT
+function Validator(object) {
+    var formElement = document.querySelector(object.form);
+    if (formElement) {
+        object.rules.forEach(function (rule) {
+            var InputElement = formElement.querySelector(rule.selector);
+            if (InputElement) {
+                InputElement.onblur = function () {
+                    // get the value : InputElement.value;
+                    // test fun : fun
+                    var errorMEss = rule.test(InputElement.value);
+                    if (errorMEss) {
+                    }
+                }
+                console.log(InputElement.parentElement.querySelector('.error'));
+            }
+        });
     }
-    email.classList.remove("Invaild");
 }
-// Show the passwrod;
-const eyeIcon = document.querySelectorAll(".fa-eye-slash");
-eyeIcon.forEach(eyeIcon => {
-    eyeIcon.addEventListener("click", function () {
-        const input = eyeIcon.parentElement.querySelector("input");
-        if (input.type === "password") {
-            eyeIcon.classList.replace("fa-eye-slash", "fa-eye");
-            return (input.type = "text");
+// Dinh nghia cac rules
+// two 2 op
+// when have error ==> return messgae error
+// when not have eror == > retyủn 0
+Validator.isRequired = function (selector) {
+    return {
+        selector: selector,
+        test: function (value) {
+            return value.trim() ? undefined : 'Vui lòng nhập trường hợp này'
+
         }
-        eyeIcon.classList.replace("fa-eye", "fa-eye-slash");
-        input.type = "password";
-    });
-});
-//check the length for the password; 
-function Createpassword() {
-    const password_patter = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
-    if (!passwordInput.value.match(password_patter)) {
-        return password.classList.add("Invaild");
     }
-    password.classList.remove("Invaild");
 }
-function Confirmpass() {
-    if (passwordInput.value !== Confirm_PasswordInput.value || Confirm_PasswordInput.value === "") {
-        return Confirm_pass.classList.add("Invaild");
-    }
-    Confirm_pass.classList.remove("Invaild");
+Validator.isEmail = function (selector) {
+    return {
+        selector: selector,
+        test: function (value) {
 
+        }
+    }
 }
-from.addEventListener("submit", function (e) {
-    e.preventDefault();
-    checkmail();
-    Createpassword();
-    Confirmpass();
-    emailInput.addEventListener("keyup", checkmail);
-    passwordInput.addEventListener("keyup", Createpassword);
-    Confirm_PasswordInput.addEventListener("keyup", Confirmpass);
-
-
-});
-const form_sign_in = document.querySelector(".sign-in-form");
-form_sign_in.addEventListener("submit", function (e) {
-    e.preventDefault();
-    const username = document.getElementById("username").value;
-    const password = document.getElementById("password").value;
-    if (!username && !password) {
-        toast({
-            title: `Error`,
-            message: `Please enter your account and password`,
-            type: `error`,
-            duation: 3000
-        });
-    }
-    else if (!username) {
-        toast({
-            title: `Warring`,
-            message: `Please enter your account`,
-            type: `warring`,
-            duation: 3000
-        });
-    }
-    else if (!password) {
-        toast({
-            title: `Warring`,
-            message: `Please enter your password`,
-            type: `warring`,
-            duation: 3000
-        });
-    }
-    else {
-        toast({
-            title: `SUCCESS`,
-            message: `Đăng nhập thành công`,
-            type: `success`,
-            duation: 3000
-        });
-    }
-})
