@@ -84,7 +84,8 @@ form .sign-up-form {
     width: 100%;
     height: 50px;
     border: 1px solid black;
-    margin: 18px 0px;
+    margin: 15px 0px;
+    padding: 0 5px;
     border-radius: 25px;
     position: relative;
 }
@@ -123,7 +124,7 @@ form .sign-up-form {
     border: none;
     margin-left: 25px;
     background: none;
-    padding: 0 15px;
+    padding: 15px 15px;
     height: 100%;
     outline: none;
     width: 100%;
@@ -164,7 +165,7 @@ form .sign-up-form {
 
 .error-text {
     font-size: 13px;
-    line-height: 50px;
+    line-height: 35px;
     margin-left: 15px;
     text-align: center;
 
@@ -215,11 +216,8 @@ a {
     color: #fff;
 }
 
-.Invaild .error {
-    display: flex;
-}
-
-.Invaild .input-field {
+.Invaild.input-field {
+    color: #d93025;
     border-color: #d93025;
 }
 
