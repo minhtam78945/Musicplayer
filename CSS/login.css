@@ -98,7 +98,7 @@ form .sign-up-form {
     padding: 15px 15px;
     height: 100%;
     outline: none;
-    width: 90%;
+    width: 94%;
     font-size: 18px;
 }
 
@@ -117,7 +117,8 @@ form .sign-up-form {
     transform: translateY(50%);
 }
 
-.fa-eye-slash {
+.fa-eye-slash,
+.fa-eye {
     position: absolute;
     top: 13px;
     right: 10px;

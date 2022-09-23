@@ -9,6 +9,21 @@ sign_in_btn.addEventListener("click", function () {
     containe.classList.remove("active");
 });
 // OOp ELEMENT
+const EyeIcon = document.querySelectorAll('.fa-eye-slash');
+console.log(EyeIcon);
+EyeIcon.forEach(EyeIcon => {
+    EyeIcon.addEventListener("click", function () {
+        const input = EyeIcon.parentElement.querySelector("input");
+        console.log(input);
+        if (input.type === "password") {
+            EyeIcon.classList.replace("fa-eye-slash", "fa-eye");
+            return (input.type = "text");
+        }
+        EyeIcon.classList.replace("fa-eye", "fa-eye-slash");
+        input.type = "password";
+    });
+
+});
 function Validator(object) {
     var selectorRules = {};
 
