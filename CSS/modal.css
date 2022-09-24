@@ -1,0 +1,78 @@
+.modal {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+}
+
+.modal_inner {
+    width: 100%;
+    position: relative;
+}
+
+.moder_body {
+    margin-top: 20px;
+    position: absolute;
+    background-color: #282828;
+    width: 200px;
+    height: 240px;
+    right: 25px;
+    top: 50px;
+}
+
+.icon_modal {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.fa-gear {
+    cursor: pointer;
+}
+.fa-gear:hover{
+    color: #999;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+    margin-top: 10px;
+}
+
+.box a {
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.box:hover {
+    background-color: #333;
+    border-right: 2px solid #e26e67;
+}
+
+.out {
+    display: flex;
+    align-items: center;
+}
+
+.out {
+    margin: 10px 10px;
+}
+
+.out:hover {
+    width: 96%;
+    background-color: #333;
+    border-right: 2px solid #e26e67;
+}
+
+.out a {
+    text-decoration: none;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.hide {
+    display: none;
+}
