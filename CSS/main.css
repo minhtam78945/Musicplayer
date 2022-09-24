@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+}
+body::-webkit-scrollbar{
+    width: 7px;
+    height: 1px;
+    background-color: #e26e67;
+}
+.root {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.silder-bar {
+    width: 23%;
+    height: max-content;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu_side {
+    width: 100%;
+    height: 664px;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+}
+
+.song_side {
+    width: 25%;
+    height: max-content;
+}
+
+.logo {
+    width: 120px;
+    height: 120px;
+}
+
+.logo a {
+    display: flex;
+    line-height: 120px;
+    text-decoration: none;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.menu_app {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu_app a {
+    text-decoration: none;
+    text-transform: uppercase;
+    text-indent: 20px;
+    margin-top: 10px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.menu_app a:hover {
+    background-color: #999;
+    border-right: 10px solid #e26e67;
+}
+
+.menu_app i {
+    margin-right: 10px;
+    line-height: 40px;
+}
+
+.menu_song {
+    width: 100%;
+    height: 300px;
+    overflow: auto;
+    scroll-behavior: smooth;
+    margin-top: 10px;
+}
+
+.menu_song::-webkit-scrollbar {
+    width: 5px;
+    height: 1px;
+    font-size: 1em;
+    background-color: #e26e67;
+    border-radius: 5px;
+
+}
+
+.menu_song li {
+    list-style-type: none;
+    position: relative;
+    padding: 5px 0px 5px 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+
+.menu_song li:hover {
+    background-color: #999;
+    border-right: 10px solid #e26e67;
+
+}
+
+.menu_song span {
+    font-size: 13px;
+    font-weight: 600;
+    margin-right: 5px;
+    color: #999;
+}
+
+.menu_song img {
+    width: 32px;
+    height: 32px;
+}
+
+.menu_song h5 {
+    font-size: 12px;
+    margin-left: 15px;
+    width: 170px;
+    overflow: hidden;
+}
+
+.menu_song .sub {
+    font-size: 9px;
+    color: #999;
+}
+
+.menu_song i {
+    flex-grow: 1;
+    position: absolute;
+    right: 13px;
+    font-size: 16px;
+}
+
+.master-play {
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+}
+
+.wave {
+    width: 30px;
+    height: 30px;
+    padding-bottom: 5px;
+    display: flex;
+    align-items: flex-end;
+    margin-right: 10px;
+    animation: Cricle 1s infinite;
+    transition: all 1s ease-in-out;
+}
+
+@keyframes Cricle {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(4deg);
+    }
+
+    50% {
+        transform: rotate(8deg);
+    }
+
+    75% {
+        transform: rotate(10deg);
+    }
+
+    100% {
+        transform: rotate(20deg);
+    }
+}
+
+.master-play img {
+    width: 50px;
+}
+
+#title {
+    width: 130px;
+    margin-left: 10px;
+    line-height: 17px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 13px;
+}
+
+.subite {
+    font-size: 13px;
+    color: #999;
+}
+
+.icon_master {
+    font-size: 10p;
+    margin: 0px 20px 0px 40px;
+    outline: none;
+    display: flex;
+    align-items: center;
+}
+
+.icon_master i {
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.currstart {
+    width: 32px;
+    margin: 0px 5px;
+    font-size: 11px;
+    font-weight: 400;
+}
+
+.base {
+    position: relative;
+    width: 50%;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin: 0px 15px 0px 10px;
+}
+
+.bar2 {
+    position: absolute;
+    background-color: #e26e67;
+    width: 50%;
+    height: 2px;
+    top: 0;
+    transition: all .3s linear;
+}
+
+.bot {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: cyan;
+    border-radius: 50px;
+    left: 0;
+    top: -2px;
+    transition: 1s linear;
+}
+
+
+.base input {
+    position: absolute;
+    width: 100%;
+    top: -6px;
+    left: 0;
+    cursor: pointer;
+    transition: .3s linear;
+    z-index: 999;
+    opacity: 0;
+}
+
+.content_main {
+    width: 87%;
+}
+
+footer {
+    width: 100%;
+    margin: 1px 0;
+    background-color: #333;
+}
